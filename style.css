@@ -1,0 +1,68 @@
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: seagreen;
+    min-height: 100%;
+    margin: 0;
+}
+
+#clickCount{
+    padding: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+#otpLogo{
+    border-radius: 100%;
+    border: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    margin: auto;
+}
+
+#otpLogo img{
+    width: 30rem;
+}
+
+#otpLogo:active{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#shop{
+    width: 15rem;
+    background-color: #00000012;
+    padding: 1rem;
+    margin: 3rem;
+    border-radius: 2rem;
+    height: 30rem;
+}
+
+#shopItemTable{
+    width: 100%;
+}
+
+.shopItem{
+    color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.314);
+    border-radius: 5px;
+    padding: 8px;
+    user-select: none;
+}
+
+.shopItem:hover{
+    cursor: pointer;
+}
+
+h2{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0.5rem;
+}
