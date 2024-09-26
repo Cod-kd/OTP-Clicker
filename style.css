@@ -1,3 +1,7 @@
+:root{
+    --textColor: white;
+}
+
 html{
     height: 100%;
 }
@@ -16,7 +20,7 @@ body{
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
-    color: white;
+    color: var(--textColor);
 }
 
 #otpLogo{
@@ -49,7 +53,7 @@ body{
 }
 
 .shopItem{
-    color: white;
+    color: var(--textColor);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.314);
     border-radius: 5px;
     padding: 8px;
@@ -61,7 +65,7 @@ body{
 }
 
 h2{
-    color: white;
+    color: var(--textColor);
     text-align: center;
     font-size: 2rem;
     margin: 0.5rem;
