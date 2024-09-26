@@ -65,6 +65,7 @@ function loadShopItems(picsRef = null){
 
 
 function START(){
+    validateStorage();
     getClickCount();
     loadShopItems();
 }
