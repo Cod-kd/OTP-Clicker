@@ -1,73 +1,111 @@
-:root{
-    --textColor: white;
+:root {
+  --textColor: white;
 }
 
-html{
-    height: 100%;
+* {
+  box-sizing: border-box;
 }
 
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: seagreen;
-    min-height: 100%;
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+html {
+  height: 100%;
 }
 
-#clickCount{
-    padding: 1.5rem;
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-    color: var(--textColor);
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: seagreen;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#otpLogo{
-    border-radius: 100%;
-    border: 0px;
-    background-color: rgba(255, 255, 255, 0);
-    display: flex;
-    margin: auto;
+#clickCount {
+  padding: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--textColor);
 }
 
-#otpLogo img{
-    width: 30rem;
+#otpLogo {
+  border-radius: 100%;
+  border: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  display: flex;
+  margin: auto;
 }
 
-#otpLogo:active{
-    background-color: rgba(255, 255, 255, 0.1);
+#otpLogo img {
+  width: 30rem;
 }
 
-#shop{
-    width: 15rem;
-    background-color: #00000012;
-    padding: 1rem;
-    margin: 3rem;
-    border-radius: 2rem;
-    height: 30rem;
+#otpLogo:active {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
-#shopItemTable{
-    width: 100%;
+#shop {
+  width: 18rem;
+  background: #6ec62c;
+  padding: 1rem;
+  margin: 3rem;
+  border-radius: 2rem;
+  min-height: 30rem;
+  height: auto;
 }
 
-.shopItem{
-    color: var(--textColor);
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.314);
-    border-radius: 5px;
-    padding: 8px;
-    user-select: none;
+#shopItemTable {
+  width: 100%;
+  height: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
 }
 
-.shopItem:hover{
-    cursor: pointer;
+tbody {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 1rem;
 }
 
-h2{
-    color: var(--textColor);
-    text-align: center;
-    font-size: 2rem;
-    margin: 0.5rem;
+.shopItem {
+  width: 100%;
+  height: 64px;
+  color: var(--textColor);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.314);
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  user-select: none;
+  background: seagreen;
+}
+
+td:first-child,
+th:first-child {
+  border-radius: 10px 0 0 10px;
+}
+
+.itemPics img {
+  visibility: hidden;
+}
+
+td:last-child,
+th:last-child {
+  border-radius: 0 10px 10px 0;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+}
+
+.shopItem:hover {
+  cursor: pointer;
+}
+
+h2 {
+  color: var(--textColor);
+  text-align: center;
+  font-size: 2rem;
+  margin: 0.5rem;
 }
